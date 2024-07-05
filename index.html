@@ -1,0 +1,634 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=hear, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo (2).png" width="200px">
+        </div>
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#producto">PRODUCTOS</a>
+            <a href="index2.html">RESERVAR</a>
+            <a href="#nosotros">ACERCA DE NOSOTROS</a>
+            <a href="#contacto">CONTACTO</a>
+        </nav>
+    </header>
+
+    <style>
+        body{
+            background:linear-gradient(90deg, #cfecd0, #ffc5ca);
+            color: white;
+        }
+        header{
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0;
+        }
+
+        header .logo h1{
+            letter-spacing: 5px;
+            font-size: 25px;
+        }
+        header.logo h2{
+            font-weight: normal;
+            letter-spacing: 10px;
+
+        }
+
+        header nav a{
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            margin: 0 25px;
+            font-size: 20   px;
+
+        }
+
+    </style>
+
+    <!--BANNER-->
+    <div id="home" class="banner">
+        <div class="capa"></div>
+        <div class="info">
+            <h1>Postres Gourmet: Elegancia en Cada Bocado</h1>
+            <P>¡Bienvenido a nuestra pastelería, donde cada bocado es una celebración de sabor y creatividad! Nuestros maestros pasteleros combinan ingredientes de la más alta calidad con un toque de amor y dedicación, creando postres artesanales que deleitan todos tus sentidos. Ya sea que busques una tarta espectacular para una ocasión especial o un dulce capricho para alegrar tu día, estamos aquí para ofrecerte la experiencia más dulce y memorable. Visítanos y déjate seducir por la magia de nuestros irresistibles postres.
+
+
+
+
+
+
+            </P>
+        </div>
+    </div>
+
+    <style>
+        .banner{
+            width: 100%;
+            height: 1000px;
+            animation: banner 10s infinite linear alternate;
+            background-size: 100% 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+
+        @keyframes banner{
+            0%,33%{background-image: url(img/1920x1200-px-background-chocolate-desserts-fondue-fruits-1712319-wallhere.com.jpg);}
+            33%,66%{background-image: url(img/2560x1440-px-berries-cakes-desserts-food-810769-wallhere.com.jpg);}
+            66%,100%{background-image: url(img/2880x1620-px-cherries-cupcakes-desserts-sprinkles-1269985-wallhere.com.jpg);}
+        }
+        .capa{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .info{
+            z-index: 1;
+            width: 95%; 
+        }
+
+        .info h1{
+            text-align: center;
+            font-size: 100px;
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            letter-spacing: 5px;
+        }
+        
+        .info p{
+            font-size: 20px;
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+    </style>
+
+    <!--productos generales-->
+    <h2 id="producto" class="subtitulo1">NUESTROS PRODUCTOS</h2>
+    <div class="contenedor-items">
+        <div class="producto">
+            <figure>
+                <img src="img/1839x1231-px-berries-desserts-food-ice-cream-1277203-wallhere.com.jpg">
+            </figure>
+            <div class="informacion-producto">
+                <h3>HELADO DE ARANDANOS</h3>
+                <p>25$</p>
+                <a href="index2.html"><button> REALIZAR PEDIDO</button></a>
+            </div>
+        </div>
+    
+        <div class="producto">
+            <figure>
+                <img src="img/1920x1200-px-background-chocolate-desserts-fondue-fruits-1712319-wallhere.com.jpg">
+            </figure>
+            <div class="informacion-producto">
+                <h3>FRUTAS CON CHOCOLATE</h3>
+                <p>20$</p>
+                <a href="index2.html"><button> REALIZAR PEDIDO</button></a>
+            </div>
+        </div>
+    
+        <div class="producto">
+            <figure>
+                <img src="img/desserts-Cream-berries-994791-wallhere.com.jpg">
+            </figure>
+            <div class="informacion-producto">
+                <h3>CREMA DE LECHE CON ARANDANOS</h3>
+                <p>20$</p>
+                <a href="index2.html"><button> REALIZAR PEDIDO</button></a>
+            </div>
+        </div>
+    
+        <div class="producto">
+            <figure>
+                <img src="img/2560x1440-px-berries-cakes-desserts-food-810769-wallhere.com.jpg">
+            </figure>
+            <div class="informacion-producto">
+                <h3>TARTA DE STRAWBERRY</h3>
+                <p>30$</p>
+                <a href="index2.html"><button> REALIZAR PEDIDO</button></a>
+            </div>
+        </div>
+    
+        <div class="producto">
+            <figure>
+                <img src="img/receta-de-postre-de-fresa_0.jpg">
+            </figure>
+            <div class="informacion-producto">
+                <h3>TARTA DE FRESA</h3>
+                <p>40$</p>
+                <a href="index2.html"><button> REALIZAR PEDIDO</button></a>
+            </div>
+        </div>
+
+        <div class="producto">
+            <figure>
+                <img src="img/postres-navidenos_3f462fd7_1280x1115.jpg">
+            </figure>
+            <div class="informacion-producto">
+                <h3>PIE DE STRAWBERRY</h3>
+                <p>30$</p>
+                <a href="index2.html"><button> REALIZAR PEDIDO</button></a>
+            </div>
+        </div>
+
+        <div class="producto">
+            <figure>
+                <img src="img/Los-20-postres-más-famosos-del-mundo-que-tienes-que-comer-antes-de-morir-portada-mouse-chocolate.webp">
+            </figure>
+            <div class="informacion-producto">
+                <h3>TARTA DE CHOCOLATE</h3>
+                <p>precio</p>
+                <a href="index2.html"><button> REALIZAR PEDIDO</button></a>
+            </div>
+        </div>
+
+        <div class="producto">
+            <figure>
+                <img src="img/food-fruit-strawberries-breakfast-dessert-Cheesecake-541156-wallhere.com.jpg">
+            </figure>
+            <div class="informacion-producto">
+                <h3>TARTA DE LECHE Y FRESA</h3>
+                <p>40$</p>
+                <a href="index2.html"><button> REALIZAR PEDIDO</button></a>
+            </div>
+        </div>
+
+        <div class="producto">
+            <figure>
+                <img src="img/Flan-de-leche-condensada.-Postre-casero.jpg">
+            </figure>
+            <div class="informacion-producto">
+                <h3>FLAN DE MARACUYA</h3>
+                <p>35$</p>
+                <a href="index2.html"><button> REALIZAR PEDIDO</button></a>
+            </div>
+        </div>
+
+        <div class="producto">
+            <figure>
+                <img src="img/cakes-pastries-desserts-1015766-wallhere.com.jpg">
+            </figure>
+            <div class="informacion-producto">
+                <h3>TARTA MULTISABORES</h3>
+                <p>40$</p>
+                <a href="index2.html"><button> REALIZAR PEDIDO</button></a>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        .subtitulo1{
+            margin: 50px 0 50px 0;
+            font-size: 30px;
+            text-align: center;
+            letter-spacing: 3px;
+            
+        }
+
+
+        .contenedor-items{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 20px;
+        }
+
+        .producto{
+            border-radius: 10px;
+
+        }
+        .producto:hover{
+            box-shadow: 0 10px 20px rgba(0,0,0,0.20);
+        }
+        .producto img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+    
+
+        .producto figure{
+            overflow: hidden;
+            transition: all 5s;
+            margin:20px 0;
+        }
+
+        .producto:hover{
+            transform: scale(1.1);
+        }
+    </style>
+
+
+    <!--productos especiales-->
+    <h2 class="subtitulo2">PRODUCTOS ESPECIALES DEL PERU</h2>
+    <div class="contenedor-items-2">
+        <div class="producto">
+            <figure>
+                <img src="img/postresespeciales/000062608W.jpg">
+            </figure>
+            <div class="informacion-producto">
+                <h3>MOSSE DE LIMON</h3>
+                <p>40$</p>
+                <a href="index2.html"><button> REALIZAR PEDIDO</button></a>
+            </div>
+        </div>
+
+        <div class="producto-especial">
+            <figure>
+                <img src="img/postresespeciales/1200px-Lima_(Perú)_-_Restaurante_El_Embrujo_-_Mazamorra_morada.jpg">
+            </figure>
+            <div class="informacion-producto">
+                <h3>MAZAMORRA MORADA</h3>
+                <p>30$</p>
+                <a href="index2.html"><button> REALIZAR PEDIDO</button></a>
+            </div>
+        </div>
+
+        <div class="producto-especial">
+            <figure>
+                <img src="img/postresespeciales/alfajores-peruanos_700x466.jpg">
+            </figure>
+            <div class="informacion-producto">
+                <h3>ALFAJORES</h3>
+                <p>30$</p>
+                <a href="index2.html"><button> REALIZAR PEDIDO</button></a>
+            </div>
+        </div>
+
+
+
+        <div class="producto-especial">
+            <figure>
+                <img src="img/postresespeciales/862c26dff62a0a95ac1ac24fb27e2c6f.webp">
+            </figure>
+            <div class="informacion-producto">
+                <h3>TURRONES</h3>
+                <p>60$</p>
+                <a href="index2.html"><button> REALIZAR PEDIDO</button></a>
+            </div>
+        </div>
+
+        <div class="producto-especial">
+            <figure>
+                <img src="img/postresespeciales/Brazo-Gitano-con-relleno-de-crema-de-mantequilla-y-decorado-con-cerezas-683x1024.webp">
+            </figure>
+            <div class="informacion-producto">
+                <h3>PIONONO</h3>
+                <p>50$</p>
+                <a href="index2.html"><button> REALIZAR PEDIDO</button></a>
+            </div>
+        </div>
+
+        <div class="producto-especial">
+            <figure>
+                <img src="img/postresespeciales/Flan-postre-español-333x360.jpg">
+            </figure>
+            <div class="informacion-producto">
+                <h3>FLAN DE LECHE</h3>
+                <p>45$</p>
+                <a href="index2.html"><button> REALIZAR PEDIDO</button></a>
+            </div>
+        </div>
+
+        <div class="producto-especial">
+            <figure>
+                <img src="img/postresespeciales/manjares-ducles-peruanos.jpg">
+            </figure>
+            <div class="informacion-producto">
+                <h3>PICARONES</h3>
+                <p>40$</p>
+                <a href="index2.html"><button> REALIZAR PEDIDO</button></a>
+            </div>
+        </div>
+
+
+        <div class="producto-especial">
+            <figure>
+                <img src="img/postresespeciales/images (2).jfif">
+            </figure>
+            <div class="informacion-producto">
+                <h3>ARROZ CON LECHE</h3>
+                <p>50$</p>
+                <a href="index2.html"><button> REALIZAR PEDIDO</button></a>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .subtitulo2{
+            margin: 50px 0 50px 0;
+            font-size: 30px;
+            text-align: center;
+            letter-spacing: 3px;
+            
+        }
+
+
+        .contenedor-items-2{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+        }
+
+        .producto-especial{
+            border-radius: 10px;
+
+        }
+        .producto-especial:hover{
+            box-shadow: 0 10px 20px rgba(0,0,0,0.20);
+        }
+        .producto-especial img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        
+
+        .producto-especial figure{
+            overflow: hidden;
+            transition: all 5s;
+            margin:10px 0;
+        }
+
+        .producto-especial:hover{
+            transform: scale(1.1);
+        }
+        /*INFORMACION PRODUCTO GENERAL*/
+        .informacion-producto{
+            text-align: center;
+
+        }
+            
+        .informacion-producto p{
+            font-size: 15px;
+        }
+
+        .informacion-producto button{
+            padding: 10px;
+            background:linear-gradient(90deg, #ffc5ca #cfecd0);
+            border-radius: 15px;
+        }
+
+
+    </style>
+
+    <!--acerca de nosotros-->
+
+    <div id="nosotros" class="acerca-box">
+        <img class="imagen-transition" src="img/acerca/chef-en-casa.jpg">
+        <div class="informacion-nosotros">
+            <h2>ACERCA DE NOSOTROS</h2>
+            <p>Bienvenidos a Delicias Dulces, donde cada bocado es una experiencia celestial. Somos una pastelería artesanal dedicada a crear los postres más exquisitos, fusionando tradición y creatividad en cada una de nuestras recetas.
+
+                Nuestra Historia
+                Nacimos del amor por la repostería y la pasión por compartir momentos dulces con nuestros seres queridos. Fundada en 2010, Delicias Dulces ha crecido desde un pequeño negocio familiar hasta convertirse en un referente local, conocido por nuestra calidad, frescura y atención al detalle.
+                
+                Nuestra Filosofía
+                En Delicias Dulces, creemos que cada postre debe ser una obra de arte. Nos comprometemos a utilizar solo los mejores ingredientes, seleccionados con cuidado y responsabilidad. Desde chocolates importados hasta frutas frescas de temporada, cada elemento es elegido para garantizar el máximo sabor y la mejor calidad. Nuestros Productos
+                Ofrecemos una amplia variedad de postres que incluyen:
+                
+                Pasteles personalizados: Perfectos para cumpleaños, bodas y celebraciones especiales.
+                Cupcakes: Delicados y llenos de sabor, ideales para cualquier ocasión.
+                Galletas y brownies: Elaborados con amor y perfectos para un antojo diario.
+                Postres gourmet: Como tartas de frutas, éclairs, macarons y más.
+                Compromiso con la Satisfacción
+                Nuestro equipo de reposteros expertos trabaja incansablemente para asegurar que cada creación sea perfecta. Nos enorgullece ofrecer un servicio al cliente excepcional, escuchando tus necesidades y adaptándonos para hacer realidad tus sueños dulces.
+                </p>
+        </div>
+    </div>
+
+    <style>
+        .acerca-box{
+            width: 100%;
+            display: flex;
+            margin-top: 50px;
+
+        }
+        .imagen-transition{
+            width: 50%;
+            height: 100%;
+            margin: 20px;
+            border-radius: 15px;
+            
+        }
+        
+        .informacion-nosotros{
+            margin: 20px;
+            border-radius: 15px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            border: 15px solid;
+            border-style: double;
+            font-size: 25px;
+            border-color: palevioletred;
+        }
+        .informacion-nosotros h2{
+            color: #fa71cd;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            letter-spacing: 5px;
+            font-weight: 900;
+        }
+    </style>
+
+    <!--ubicacion-->
+
+    <h3 class="ubicanos">UBICANOS</h3>
+    <div class="direccion" align="center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15599.748322428524!2d-76.9414763!3d-12.1846845!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b917d5e3dc0b%3A0x57f2a1141c5da6f!2sCERTUS%20Villa!5e0!3m2!1ses!2spe!4v1720151515679!5m2!1ses!2spe" width="75%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <style>
+        .ubicanos{
+            text-align: center;
+            font-size: 30px;
+            margin-top: 50px;
+            font-weight: 700;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            letter-spacing: 4px;
+            
+        }
+
+        .direccion{
+            justify-content: center;
+            align-items: center;
+        }
+        
+    </style>
+    
+    <!--footer-->
+    <footer id="contacto" class="footer-box">
+        <div class="contenedor">
+            <div class="subcontenedor">
+                <div class="contacto">
+                    <h3>CONTACTO</h3>
+                    <p>Dirección: Certus-Villa el Salvador</p>
+                    <p>Teléfono: 912981006</p>
+                    <p>Email: Franklin.31.contreras@gmail.com</p>
+                </div>
+                <div class="seccion-links">
+                    <h3>SECCION MENU</h3>
+                    <ul>
+                        <li><a href="">Inicio</a></li>
+                        <li><a href="">Productos</a></li>
+                        <li><a href="">Servicios</a></li>
+                        <li><a href="">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="seccion-redessociales">
+                    <h3>REDES SOCIALES</h3>
+                    <ul>
+                        <li><img src="redes sociales/whatsapp (1).png" alt="instagram" width="20px"><a href="#" target="_blank">whatsapp</a></li>
+                        <li><img src="redes sociales/facebook (1).png" alt="facebook" width="20px"><a href="#" target="_blank">facebook</a></li>
+                        <li><img src="redes sociales/instagram.png" alt="instagram" width="20px"><a href="#" target="_blank">Instagram</i></a></li>
+                        <li><img src="redes sociales/linkedin.png" alt="linkedin" width="20px"><a href="#" target="_blank">linkedin</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="politica">
+                <p>POLITICAS</p>
+                <ul>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Términos de servicio</a></li>
+                    <li><a href="#">Mapa del sitio</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <style>
+        
+    .footer-box{
+        display: flex;
+        background: linear-gradient(#c471f5 0%, #fa71cd);
+        margin: 0;
+        padding: 0;
+        margin-top: 40px;
+        
+    }
+
+    .contenedor{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        
+    }
+
+    .subcontenedor{
+        display: flex;
+        flex: 2;
+    }
+    
+    /*seccion contacto*/
+    .contacto{
+        padding-left: 15px;
+    }
+
+
+    /*seccion menu*/
+    .seccion-links{
+        margin-left: 200px;
+
+    }
+
+    .seccion-links ul li a{
+        color: white;
+        text-decoration-line: none;
+    }
+
+    .seccion-links ul li a:hover{
+        text-decoration: underline;
+    }
+
+
+
+    /*seccion redes sociales*/
+    .seccion-redessociales{
+        margin-left: 300px;
+    }
+    .seccion-redessociales ul li a{
+        color: white;
+        text-decoration-line: none;
+    }
+    .seccion-redessociales ul li a:hover{
+        text-decoration: underline;
+    }
+
+    
+    /*politica*/  
+    .politica{
+        padding-right: 300px;
+        margin-top: 10px;
+        
+    }
+    .politica p{
+        font-weight: 700;
+    }
+
+    .politica ul li a{
+        color: white;
+        text-decoration-line: none;
+    }
+    .politica ul li a:hover{
+        text-decoration: underline;
+    }
+        
+    </style>
+
+</body>
+</html>
